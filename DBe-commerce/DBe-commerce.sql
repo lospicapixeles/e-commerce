@@ -87,20 +87,7 @@ CREATE TABLE Pagos (
 );
 GO
 
--- Insertar categorías de ejemplo
-INSERT INTO Categorias (nombre, descripcion) VALUES 
-('Cámaras de Seguridad', 'Cámaras de vigilancia para uso residencial y comercial'),
-('Sistemas de Alarmas', 'Alarmas contra robos e incendios'),
-('Control de Acceso', 'Dispositivos de control de acceso y biometría'),
-('Grabadores DVR/NVR', 'Dispositivos de grabación de video para sistemas de cámaras');
-GO
 
--- Insertar métodos de pago de ejemplo
-INSERT INTO MetodosPago (nombre, descripcion) VALUES 
-('Tarjeta de Crédito', 'Pago con tarjeta de crédito Visa, Mastercard, etc.'),
-('Transferencia Bancaria', 'Pago mediante transferencia bancaria'),
-('Pago contra Entrega', 'Pago al momento de recibir el pedido');
-GO
 
 -- Tabla de Roles para definir los tipos de usuario (Cliente, Administrador, etc.)
 CREATE TABLE Roles (
@@ -136,14 +123,3 @@ CREATE TABLE HistorialAcceso (
 );
 GO
 
--- Insertar roles de ejemplo
-INSERT INTO Roles (nombre, descripcion) VALUES 
-('Cliente', 'Usuario con permisos para realizar compras en el comercio electrónico'),
-('Administrador', 'Usuario con permisos para gestionar el inventario, usuarios y pedidos');
-GO
-
--- Insertar un usuario administrador de ejemplo
--- Nota: En una implementación real, la contraseña debe estar cifrada con un hash seguro (ej., bcrypt)
-INSERT INTO Usuarios (id_cliente, username, password_hash, email, id_rol, estado) VALUES 
-(NULL, 'admin', 'hashed_password_example', 'admin@example.com', 2, 'Activo');
-GO
