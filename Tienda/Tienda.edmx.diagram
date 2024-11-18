@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a8e2ebeb985742ab82865471238a2855" Name="Diagram1">
+        <EntityTypeShape EntityType="DBEcommerceModel.Categorias" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBEcommerceModel.Clientes" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBEcommerceModel.DetallesPedido" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBEcommerceModel.HistorialAcceso" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBEcommerceModel.MetodosPago" Width="1.5" PointX="6" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBEcommerceModel.Pagos" Width="1.5" PointX="8.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBEcommerceModel.Pedidos" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBEcommerceModel.Productos" Width="1.5" PointX="3" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBEcommerceModel.Roles" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBEcommerceModel.Usuarios" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="DBEcommerceModel.FK__Productos__id_ca__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="DBEcommerceModel.FK__Pedidos__id_clie__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="DBEcommerceModel.FK__Usuarios__id_cli__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="DBEcommerceModel.FK__DetallesP__id_pe__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="DBEcommerceModel.FK__DetallesP__id_pr__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="DBEcommerceModel.FK__Historial__id_us__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="DBEcommerceModel.FK__Pagos__id_metodo__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="DBEcommerceModel.FK__Pagos__id_pedido__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="DBEcommerceModel.FK__Usuarios__id_rol__5CD6CB2B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
