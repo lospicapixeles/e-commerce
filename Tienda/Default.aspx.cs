@@ -7,34 +7,33 @@ using System.Web.UI.WebControls;
 
 namespace Tienda
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class Home : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                CargarProductos();
+                //CargarProductos();
+                CargarCatergorias();
             }
-
         }
 
-        private void CargarProductos()
+        private void CargarCatergorias()
         {
             using (DBEcommerceEntities ecommerce = new DBEcommerceEntities())
             {
-                var productos = (from P in ecommerce.Productos
-                                 select new
-                                 {
-                                     P.nombre,
-                                     P.precio,
-                                     P.stock,
-                                     P.imagen_url
-                                 }).ToList();
+                var categorias = (from c in ecommerce.Categorias
+                                  select new
+                                  {
+                                      c.id,
+                                      c.nombre,
+                                      c.descripcion
+                                  }).ToList();
 
-                RepeaterProductos.DataSource = productos;
-                RepeaterProductos.DataBind();
+                repiterCategoria.DataSource = categorias;
+                repiterCategoria.DataBind();
+
             }
         }
-
     }
 }

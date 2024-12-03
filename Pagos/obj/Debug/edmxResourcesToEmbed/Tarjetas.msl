@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BDTarjetaModelStoreContainer" CdmEntityContainer="BDTarjetaEntities">
+    <EntitySetMapping Name="Tarjeta">
+      <EntityTypeMapping TypeName="BDTarjetaModel.Tarjeta">
+        <MappingFragment StoreEntitySet="Tarjeta">
+          <ScalarProperty Name="nro_tarjeta" ColumnName="nro_tarjeta" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="ccv" ColumnName="ccv" />
+          <ScalarProperty Name="saldo" ColumnName="saldo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

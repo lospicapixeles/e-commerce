@@ -11,25 +11,16 @@ namespace Tienda
 {
 
 
-    public partial class Default
+    public partial class Home
     {
 
         /// <summary>
-        /// Control form1.
+        /// Control repiterCategoria.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
-        /// Control RepeaterProductos.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater RepeaterProductos;
+        protected global::System.Web.UI.WebControls.Repeater repiterCategoria;
     }
 }
